@@ -7,7 +7,7 @@ sources:
       - name: customers
         description: Raw customers data
         columns:
-          - name: customer_id
+          - name: id
             description: PK for the customer table
             tests:
             - not_null
@@ -15,7 +15,7 @@ sources:
       - name: orders
         description: Raw orders data
         columns:
-          - name: order_id
+          - name: id
             description: PK for the order table
             tests:
             - not_null
