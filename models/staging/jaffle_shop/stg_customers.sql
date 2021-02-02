@@ -4,4 +4,4 @@
         ,   first_name
         ,   last_name
     FROM 
-        AMC_DBT.jaffle_shop.customers
+        {{source('jaffle_shop', 'customers')}}

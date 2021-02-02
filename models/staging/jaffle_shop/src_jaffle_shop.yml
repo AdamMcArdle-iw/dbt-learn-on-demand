@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: AMC_DBT
+    tables:
+      - name: customers
+        description: Raw customers data
+        columns:
+          - name: customer_id
+            description: PK for the customer table
+            tests:
+            - not_null
+            - unique
+      - name: orders
+        description: Raw orders data
+        columns:
+          - name: order_id
+            description: PK for the order table
+            tests:
+            - not_null
+            - unique
+
