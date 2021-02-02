@@ -4,4 +4,4 @@ SELECT
     ,   order_date
     ,   status
 FROM
-    AMC_DBT.jaffle_shop.orders
+        {{source('jaffle_shop', 'orders')}}
